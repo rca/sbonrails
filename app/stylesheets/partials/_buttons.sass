@@ -4,15 +4,21 @@
 
 .button
     :display inline-block
-    :padding 4px 15px
+    :padding 0px 15px
     :color #fff
+    :text-decoration none
     :font-weight bold
     +border-radius( 20px )
     +box-shadow( 0px, 1px, 3px, rgba(0,0,0,.4) )
     :text-shadow rgba(0,0,0,.4) 0px -1px 1px
-    :border rgba(0,0,0,.2) solid 1px
+    :border rgba(0,0,0,.8) solid 1px
     :background url(/images/highlight.png) top left
     :cursor pointer
+
+    span
+        :padding 4px 0
+        :display block
+        :border-top 1px solid rgba(255,255,255,0.15)
 
 
 .button:hover
@@ -29,6 +35,7 @@
 .large.button
     :font-size 20px
     :margin-top 20px
+    :margin-right 20px
 
 .medium.button
     :font-size 16px
@@ -40,25 +47,32 @@
 .blue.button
     :background-color = !blue
 
-.blue.button:hover
-    +lighten(!blue)
+
+.red.button
+    :background-color = !red
 
 .dark-gray.button
     :background-color = !dark_gray
 
-.dark-gray.button:hover
-    +lighten(!dark_gray)
-
 .medium-gray.button
     :background-color #454545
-
-
-.medium-gray.button:hover
-    +lighten(#454545)
 
 
 .light-gray.button
     :background-color = !gray
     :text-shadow none
     :color #9a9a9a
+
+
+.medium-gray.button:hover
+    +lighten(#454545)
+
+.blue.button:hover
+    +lighten(!blue)
+
+.red.button:hover
+    +lighten(!red)
+
+.dark-gray.button:hover
+    +lighten(!dark_gray)
 

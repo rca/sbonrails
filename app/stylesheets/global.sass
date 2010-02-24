@@ -1,8 +1,90 @@
 // -------------------------
 // CSS PARTIALS
 // -------------------------
+@import partials/reset.sass
 @import partials/grid.sass
 @import partials/colors.sass
 @import partials/mixins.sass
 @import partials/buttons.sass
+
+
+// -------------------------
+// GENERAL
+// -------------------------
+
+body
+    :background = !strong_dark_gray
+    :font-family Helvetica, Arial, sans-serif
+    :color #d2d2d2
+
+
+a
+    :color = !link_color
+
+strong
+    :color #fff
+
+hr
+    :color transparent
+    :border-left none
+    :border-right none
+    :border-top rgba(0,0,0,1) 1px solid
+    :border-bottom rgba(255,255,255,.09) 1px solid
+
+.header-bar
+    :width 100%
+    :height 60px
+    :background = !near_black
+    :border-bottom 1px solid rgba(255,255,255,0.1)
+    :z-index -1
+    +absolute-header-bar
+
+
+.header
+    :height 60px
+    :margin-bottom 80px
+    :line-height 60px
+
+    h1
+        :color #fff
+        :font-size 30px
+
+    #menu
+        +horizontal-menu(20px)
+        +absolute-right(0px,0px)
+        :font-size 18px
+        :text-transform capitalize
+
+        a
+            :color = !medium_gray
+            :text-decoration none
+
+            &.active
+                :color white
+                :font-weight bold
+
+
+
+
+
+// -------------------------
+// HOMEPAGE TIMEs
+// -------------------------
+.homepage-main
+    :font-size 18px
+
+    p
+        :margin-top 30px
+        :margin-bottom 20px
+
+.time
+    :font-size 65px
+    :color = !light_gray
+
+    &.mega
+        :padding 12px 0
+        :border 1px solid rgba(0,0,0,.6)
+        :background #121212
+        :border-bottom 1px solid rgba(255,255,255,0.2)
+        +border-radius(8px)
 

@@ -1,0 +1,11 @@
+!!! 5
+%html
+    %head
+        = stylesheet_link_tag "/stylesheets/compiled/global.css"
+
+    %body
+        .header-bar
+        #gridWrapper
+            = render :partial => 'shared/header'
+            = yield
+

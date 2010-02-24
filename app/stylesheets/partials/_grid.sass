@@ -8,6 +8,11 @@
 !column_left_margin = 20px
 
 
+#gridWrapper
+    :width = !grid_width
+    :margin 0 auto
+    :position relative
+
 .row
     :margin = !row_margin, 0
 
@@ -18,12 +23,17 @@
     :visibility hidden
     :height 0
 
+
+.centered
+    :margin 0 auto
+    :text-align center
+
 .column, .columns
     :margin = 0, 0, 0, !column_left_margin
     :padding 0
     :float left
 
-.first-column
+.first.column,.first.columns
     :margin 0
     :padding 0
     :float left
