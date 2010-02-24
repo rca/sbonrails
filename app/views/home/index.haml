@@ -4,16 +4,17 @@
             %h2.time.mega
                 <span></span>Mar 10
 
-        .one.column
+        .one.column.first
             %h2.time
                 @
 
-        .two-and-a-half.columns
+        .two-and-a-half.columns.first
             %h2.time.mega
                 <span></span>6:30
                 %small
                     pm
 
+.centered.seven.homepage-main
     .row
         %p.next-meeting
             %strong Next Meeting:
@@ -23,7 +24,62 @@
 
 %hr
 
-.five.centered
+.five.centered.extra-margin
     = link_to "<span>Get Directions &raquo;</span>", "#", :class => "large red button"
     = link_to "<span>Join SB on Rails &raquo;</span>", "#", :class => "large blue button"
+
+
+
+.row
+    .three-and-a-half.columns.first
+        %h3
+            Presentation Ideas
+            %small
+                = link_to "<span>Add +</span>", "#", :class => 'small blue button'
+
+        %ul.homepage-list
+            %li
+                Working with Git
+            %li
+                Using Chef with Rails
+            %li
+                Lightning Talks
+            %li
+                Testing with Cucumber
+
+        %p
+            = link_to "See More &raquo;", "#"
+
+    .three-and-a-half.columns
+        %h3
+            Past Presentations
+
+        %ul.homepage-list
+            %li
+                Haml and Sass by <a href="#">Zeke</a>
+            %li
+                Intro to Lattay by <a href="#">Ross</a>
+            %li
+                Obscure Ruby Quiz by <a href="#">Collin</a>
+            %li
+                Testing with Cucumber by <a href="#">Tim and Bob</a>
+
+        %p
+            = link_to "See More &raquo;", "#"
+
+    .two-and-a-half.columns
+        %h3 Upcoming Events
+
+        %ul.homepage-list
+            %li
+                Working with Git
+            %li
+                Using Chef with Rails
+            %li
+                Lightning Talks
+            %li
+                Testing with Cucumber
+
+        %p
+            = link_to "See More &raquo;", "#"
 
