@@ -4,21 +4,25 @@
 
 .button
     :display inline-block
-    :padding 0px 15px
+    :padding 0px
     :color #fff
     :text-decoration none
     :font-weight bold
     +border-radius( 20px )
     +box-shadow( 0px, 1px, 3px, rgba(0,0,0,.4) )
-    :text-shadow rgba(0,0,0,.4) 0px -1px 1px
+    :text-shadow rgba(0,0,0,.6) 0px -1px 1px
     :border rgba(0,0,0,.8) solid 1px
-    :background url(/images/highlight.png) top left
+    :background url(/images/shadow.png) top left repeat-x
     :cursor pointer
 
     span
-        :padding 4px 0
+        :padding 5px 14px
         :display block
-        :border-top 1px solid rgba(255,255,255,0.15)
+        :background url(/images/highlight.png) top left repeat-x
+        :border-top 1px solid rgba(255,255,255,0.3)
+        :border-left 1px solid rgba(255,255,255,0.15)
+        :border-right 1px solid rgba(255,255,255,0.15)
+        +border-radius(20px)
 
 
 .button:hover
