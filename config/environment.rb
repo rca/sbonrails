@@ -7,7 +7,17 @@ Rails::Initializer.run do |config|
   config.gem 'haml', :version => '>=2.2.16'
   config.gem "thoughtbot-shoulda", :lib => "shoulda", :source => "http://gems.github.com"
   config.gem "clearance"
-
   config.time_zone = 'UTC'
 end
+
+
+ActionMailer::Base.smtp_settings = {
+    :enable_starttls_auto => true,
+    :address => "smtp.gmail.com",
+    :port => "587",
+    :domain => "gmail.com",
+    :authentication => :plain,
+    :user_name => "jcarver989",
+    :password => "003267jc"
+  }
 

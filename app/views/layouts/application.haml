@@ -2,10 +2,13 @@
 %html
     %head
         = stylesheet_link_tag "/stylesheets/compiled/global.css"
+        = javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"
+        = javascript_include_tag "/javascripts/behaviors.js"
 
     %body
         .header-bar
         #gridWrapper
             = render :partial => 'shared/header'
+            = render_flash
             = yield
 

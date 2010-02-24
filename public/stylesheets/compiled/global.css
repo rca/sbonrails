@@ -125,6 +125,16 @@ html, body, div, h1, h2, h3, h4, h5, h6, ul, li { margin: 0; padding: 0; }
 
 .light-gray.button { background-color: #cccccc; text-shadow: none; color: #9a9a9a; }
 
+.special-labels span.wrap { position: relative; background: transparent; border: 5px solid transparent; display: inline-block; margin: 5px 0 5px 0; -moz-border-radius: 3px; -webkit-border-radius: 3px; }
+.special-labels span.wrap label { position: absolute; top: 6px; left: 8px; color: #888888; font-size: 18px; font-weight: bold; }
+.special-labels span.wrap label.faded { color: #555555; }
+.special-labels span.wrap input { padding: 7px; color: white; border: 1px solid #444444; font-size: 16px; font-weight: bold; background: #333333; }
+.special-labels span.wrap.shadow { border: 5px solid rgba(0,105,183,.2); -moz-box-shadow: 0px 0px 5px rgba(0,105,183,.5); }
+.special-labels span.wrap.shadow input { border: 1px solid rgba(20,58,87,.4); }
+
+.special-labels.model-form { margin-top: 20px; }
+.special-labels.model-form .button { margin-top: 20px; }
+
 body { background: url("/images/body-bg.png") no-repeat 50% 60px; background-color: #101010; font-family: Helvetica, Arial, sans-serif; color: #d2d2d2; }
 
 h3 { font-size: 24px; text-shadow: 0 -1px 0 #000; position: relative; }

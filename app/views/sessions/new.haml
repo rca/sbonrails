@@ -1,0 +1,15 @@
+- form_for :session, :url => session_path, :html => {:class => 'special-labels'} do |form|
+    %span.wrap
+        = form.label :email
+        = form.text_field :email
+
+    %span.wrap
+        = form.label :password
+        = form.password_field :password
+
+    = form.check_box :remember_me
+    = form.label :remember_me
+
+    %button.large.blue.button
+        <span>Sign in</span>
+
