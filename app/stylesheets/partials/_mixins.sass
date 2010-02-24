@@ -1,0 +1,37 @@
+// -------------------------
+// CSS 3 Mixins - Rounded Edges, Shadows
+// Only works in Firefox & Safari
+// -------------------------
+= border-radius(!radius)
+    :-moz-border-radius = !radius
+    :-webkit-border-radius = !radius
+
+= box-shadow(!y,!x,!blur,!color)
+    :-moz-box-shadow = !y, !x, !blur, !color
+    :-webkit-box-shadow = !y,!x, !blur, !color
+    :box-shadow = !y, !x, !blur, !color
+
+
+
+// -------------------------
+// For absolute positioning
+// -------------------------
+= absolute-base(!top)
+    :position absolute
+    :top = !top
+
+= absolute-right(!top, !right)
+    +absolute-base(!top)
+    :right = !right
+
+= absolute-left(!top,!left)
+    +absolute-base(!top)
+    :left = !left
+
+
+// -------------------------
+// Used to lighten links on hover events
+// -------------------------
+= lighten(!color)
+    :background-color = !color + #333
+

@@ -1,0 +1,101 @@
+// -------------------------
+// CSS GRID
+// -------------------------
+
+!grid_width = 1000px
+!column_width = !grid_width / 10
+!row_margin = 20px
+!column_left_margin = 20px
+
+
+.row
+    :margin = !row_margin, 0
+
+.row:after
+    :display block
+    :clear both
+    :content "."
+    :visibility hidden
+    :height 0
+
+.column, .columns
+    :margin = 0, 0, 0, !column_left_margin
+    :padding 0
+    :float left
+
+.first-column
+    :margin 0
+    :padding 0
+    :float left
+
+.1-quarter
+    :width 25px
+
+.half
+    :width 50px
+
+.three-quarters
+    :width 75px
+
+
+.one
+    :width = !column_width
+
+.two
+    :width = !column_width * 2
+
+.three
+    :width = !column_width * 3
+
+.four
+    :width = !column_width * 4
+
+
+.five
+    :width = !column_width * 5
+
+
+.six
+    :width = !column_width * 6
+
+.seven
+    :width = !column_width * 7
+
+.eight
+    :width = !column_width * 8
+
+.nine
+    :width = !column_width * 9
+
+.ten
+    :width = !column_width * 10
+
+.one-and-a-quarter    :width = !column_width * 1.25
+.two-and-a-quarter    :width = !column_width * 2.25
+.three-and-a-quarter    :width = !column_width * 3.25
+.four-and-a-quarter    :width = !column_width * 4.25
+.five-and-a-quarter    :width = !column_width * 5.25
+.six-and-a-quarter    :width = !column_width * 6.25
+.seven-and-a-quarter    :width = !column_width * 7.25
+.eight-and-a-quarter    :width = !column_width * 8.25
+.nine-and-a-quarter    :width = !column_width * 9.25
+
+.one-and-a-half    :width = !column_width * 1.5
+.two-and-a-half    :width = !column_width * 2.5
+.three-and-a-half    :width = !column_width * 3.5
+.four-and-a-half    :width = !column_width * 4.5
+.five-and-a-half    :width = !column_width * 5.5
+.six-and-a-half    :width = !column_width * 6.5
+.seven-and-a-half    :width = !column_width * 7.5
+.eight-and-a-half    :width = !column_width * 8.5
+.nine-and-a-half    :width = !column_width * 9.5
+.one-and-three-quarter    :width = !column_width * 1.75
+.two-and-three-quarters    :width = !column_width * 2.75
+.three-and-three-quarters    :width = !column_width * 3.75
+.four-and-three-quarters    :width = !column_width * 4.75
+.five-and-three-quarters    :width = !column_width * 5.75
+.six-and-three-quarters    :width = !column_width * 6.75
+.seven-and-three-quarters    :width = !column_width * 7.75
+.eight-and-three-quarters    :width = !column_width * 8.75
+.nine-and-three-quarters    :width !column_width * 9.75
+
