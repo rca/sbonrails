@@ -1,0 +1,18 @@
+- form_for @user, :html => {:class => 'special-labels'} do |form|
+
+    %span.wrap
+        = form.label :email
+        = form.text_field :email
+
+    %span.wrap
+        = form.label :password
+        = form.password_field :password
+
+    %span.wrap
+        = form.label :password_confirmation
+        = form.password_field :password_confirmation
+
+
+    %button.large.blue.button
+        <span>Sign up</span>
+
