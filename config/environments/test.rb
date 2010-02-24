@@ -1,3 +1,4 @@
+
 # Settings specified here will take precedence over those in config/environment.rb
 
 # The test environment is used exclusively to run your application's
@@ -17,6 +18,7 @@ config.action_view.cache_template_loading            = true
 # Disable request forgery protection in test environment
 config.action_controller.allow_forgery_protection    = false
 
-config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+
 config.action_mailer.delivery_method = :test
+config.action_mailer.default_url_options = { :host => 'localhost:3000' }
 
