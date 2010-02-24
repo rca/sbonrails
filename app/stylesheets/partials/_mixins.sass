@@ -2,13 +2,24 @@
 // CSS3 - ROUNDED CORNERS + SHADOWS
 // -------------------------
 = border-radius(!radius)
-    :-moz-border-radius = !radius
-    :-webkit-border-radius = !radius
+    :-moz-border-radius     = !radius
+    :-webkit-border-radius  = !radius
 
 = box-shadow(!y,!x,!blur,!color)
-    :-moz-box-shadow = !y, !x, !blur, !color
-    :-webkit-box-shadow = !y,!x, !blur, !color
-    :box-shadow = !y, !x, !blur, !color
+    :-moz-box-shadow    = !y !x !blur !color
+    :-webkit-box-shadow = !y !x !blur !color
+    :box-shadow         = !y !x !blur !color
+
+
+= inset-box-shadow(!y,!x,!blur,!color)
+    :-moz-box-shadow      = "inset" !y !x !blur !color
+    :-webkit-box-shadow   = "inset" !y !x !blur !color
+    :box-sahdow           = "inset" !y !x !blur !color
+
+= imageless-button-highlight-shadow(!highlight_color,!shadow_color)
+    :-moz-box-shadow    = "inset" 0 15px 5px !highlight_color, "inset" 0px -10px 12px !shadow_color
+    :-webkit-box-shadow = "inset" 0 15px 5px !highlight_color, "inset" 0px -10px 12px !shadow_color
+    :box-shadow         = "inset" 0 15px 5px !highlight_color, "inset" 0px -10px 12px !shadow_color
 
 // -------------------------
 // MENUS

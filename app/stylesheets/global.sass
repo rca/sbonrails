@@ -13,10 +13,10 @@
 // -------------------------
 
 body
-    :background = !strong_dark_gray url(/images/body-bg.png) no-repeat 45% 60px
+    :background url("/images/body-bg.png") no-repeat 45% 60px
+    :background-color = !strong_dark_gray
     :font-family Helvetica, Arial, sans-serif
     :color #d2d2d2
-
 
 a
     :color = !link_color
@@ -37,19 +37,28 @@ hr
     :width 100%
     :height 60px
     :background = !near_black
-    :border-bottom 1px solid rgba(255,255,255,0.1)
+    :border-bottom 1px solid rgba(255,255,255,0.15)
     :z-index -1
     +absolute-header-bar
 
 
 .header
-    :height 60px
-    :margin-bottom 80px
+    :margin-bottom 20px
     :line-height 60px
 
     h1
         :color #fff
-        :font-size 30px
+        :font-size 32px
+
+        &.logo
+            :background url(/images/logo.png) no-repeat top left
+            :height 123px
+            :padding-left 130px
+
+            span
+                :font-weight normal
+                :color = !gray
+
 
     #menu
         +horizontal-menu(20px)
@@ -82,13 +91,33 @@ hr
         :margin-bottom 20px
 
 .time
-    :font-size 65px
-    :color = !light_gray
+    :font-size 60px
+    :line-height 100px
+    :text-shadow 0 -1px 0px #fff, 0 3px 5px rgba(0,0,0,1)
+    :color #ccc
 
     &.mega
+        :color = !light_gray
+        :font-size 65px
+        :position relative
         :padding 12px 0
         :border 1px solid rgba(0,0,0,.6)
         :background #0f0f0f url(/images/time-bubbles.png)
-        :border-bottom 1px solid rgba(255,255,255,0.2)
+        :border-bottom 1px solid rgba(255,255,255,0.18)
+        :height 80px
+        :line-height 80px
+
         +border-radius(8px)
+        +inset-box-shadow( 0, 0, 10px, rgba(0,0,0,.6) )
+
+        span
+            :display block
+            :height 46px
+            :width 248px
+            :background url(/images/time-gradient.png) repeat-x 0% 10%
+            +absolute-top(35px)
+
+        small
+            :font-size 30px
+            :line-height 60px
 

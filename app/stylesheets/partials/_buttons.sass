@@ -11,18 +11,23 @@
     +border-radius( 20px )
     +box-shadow( 0px, 1px, 3px, rgba(0,0,0,.4) )
     :text-shadow rgba(0,0,0,.6) 0px -1px 1px
-    :border rgba(0,0,0,.8) solid 1px
-    :background url(/images/shadow.png) top left repeat-x
+    :border rgba(0,0,0,.9) solid 1px
     :cursor pointer
+    :outline none
 
     span
-        :padding 5px 14px
-        :display block
-        :background url(/images/highlight.png) top left repeat-x
-        :border-top 1px solid rgba(255,255,255,0.3)
-        :border-left 1px solid rgba(255,255,255,0.15)
+        :padding      5px 14px
+        :display      block
+        :border-top   1px solid rgba(255,255,255,0.3)
+        :border-left  1px solid rgba(255,255,255,0.15)
         :border-right 1px solid rgba(255,255,255,0.15)
         +border-radius(20px)
+        +imageless-button-highlight-shadow( rgba(255,255,255,.1), rgba(0,0,0,.25) )
+
+
+    &:active
+        span
+            +inset-box-shadow(0, 5px, 10px, rgba(0,0,0,.4) )
 
 
 .button:hover
@@ -37,8 +42,8 @@
 // ---------------------------------------
 
 .large.button
-    :font-size 20px
-    :margin-top 20px
+    :font-size    20px
+    :margin-top   20px
     :margin-right 20px
 
 .medium.button
@@ -50,33 +55,37 @@
 
 .blue.button
     :background-color = !blue
+    &:hover
+        +lighten(!blue)
+    &:active
+        :background-color = !blue
+
 
 
 .red.button
     :background-color = !red
+    &:hover
+        +lighten(!red)
+    &:active
+        :background-color = !red
 
 .dark-gray.button
     :background-color = !dark_gray
+    &:hover
+        +lighten(!dark_gray)
+    &:active
+        :background-color = !dark_gray
 
 .medium-gray.button
     :background-color #454545
+    &:hover
+        +lighten(#454545)
+    &:active
+        :background-color = #454545
 
 
 .light-gray.button
     :background-color = !gray
     :text-shadow none
     :color #9a9a9a
-
-
-.medium-gray.button:hover
-    +lighten(#454545)
-
-.blue.button:hover
-    +lighten(!blue)
-
-.red.button:hover
-    +lighten(!red)
-
-.dark-gray.button:hover
-    +lighten(!dark_gray)
 
