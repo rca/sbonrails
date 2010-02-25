@@ -1,0 +1,15 @@
+%h2.page-title
+    Presentation:
+    = @presentation.title
+
+    %small
+        = image_tag "like-gray.png"
+        = @presentation.num_likes
+        people like this
+
+%hr
+
+
+%p
+    = @presentation.description
+

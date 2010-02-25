@@ -6,13 +6,12 @@
 %ul.homepage-list#presentationIdeas
     - @presentation_ideas.each do |idea|
         %li
-            = idea.title
-            -if current_user
-                %span.actions
-                    = render_like_link(idea)
-                    %span.num-likes
-                        = idea.num_likes
+            = link_to idea.title, presentation_path(idea)
+            %span.actions
+                = render_like_link(idea)
+                %span.num-likes
+                    = idea.num_likes
 
 %p
-    = link_to "See More &raquo;", "#"
+    = link_to "See More &raquo;", presentation_ideas_path
 

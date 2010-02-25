@@ -1,0 +1,8 @@
+%h2.page-title
+    Presentation Ideas
+    %small
+        = link_to "<span>Add +</span>", new_presentation_path, :class => 'large blue button' if current_user
+%hr
+
+= render :partial => 'presentation_collection', :locals => {:presentations => @presentations}
+

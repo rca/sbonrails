@@ -1,0 +1,15 @@
+%table
+    %th Title
+    %th Description
+    %th Likes
+
+    - presentations.each do |presentation|
+        %tr
+            %td
+                = link_to presentation.title, presentation_path(presentation)
+            %td
+                = presentation.description
+
+            %td
+                = presentation.num_likes
+

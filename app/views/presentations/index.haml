@@ -1,0 +1,19 @@
+%h2.page-title
+    Select What you would like to do
+
+%hr
+
+.row
+    - if current_user
+        .three.columns
+            = link_to "<span>Suggest an Idea &raquo; </span>", new_presentation_path, :class => 'large red button'
+
+
+    .three.columns
+        = link_to "<span>View Past Talks &raquo;</span>", past_presentations_path, :class => 'large blue button'
+
+
+    .three.columns
+        %h3
+            = link_to "<span>View Upcoming Talks &raquo;</span>", upcoming_presentations_path, :class => 'large blue button'
+

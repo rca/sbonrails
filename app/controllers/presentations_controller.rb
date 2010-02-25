@@ -1,5 +1,24 @@
 class PresentationsController < ApplicationController
 
+  def index
+  end
+
+  def ideas
+    @presentations = Presentation.ideas.all
+  end
+
+  def past
+    @presentations = Presentation.past.all
+  end
+
+  def upcoming
+    @presentations = Presentation.upcoming.all
+  end
+
+  def show
+    @presentation = Presentation.find(params[:id])
+  end
+
   def new
     @presentation = Presentation.new
   end
