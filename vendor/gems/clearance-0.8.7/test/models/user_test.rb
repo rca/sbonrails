@@ -1,7 +1,6 @@
 require 'test_helper'
 
 class UserTest < ActiveSupport::TestCase
-
   # signing up
 
   context "When signing up" do
@@ -253,3 +252,4 @@ class UserTest < ActiveSupport::TestCase
   end
 
 end
+

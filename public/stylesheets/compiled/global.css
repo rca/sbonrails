@@ -125,10 +125,11 @@ html, body, div, h1, h2, h3, h4, h5, h6, ul, li { margin: 0; padding: 0; }
 
 .light-gray.button { background-color: #cccccc; text-shadow: none; color: #9a9a9a; }
 
-.special-labels span.wrap { position: relative; background: transparent; border: 5px solid transparent; display: inline-block; margin: 5px 0 5px 0; -moz-border-radius: 3px; -webkit-border-radius: 3px; }
+.special-labels span.wrap { position: relative; background: transparent; border: 5px solid transparent; display: block; margin: 5px 0 5px 0; -moz-border-radius: 3px; -webkit-border-radius: 3px; }
 .special-labels span.wrap label { position: absolute; top: 6px; left: 8px; color: #888888; font-size: 18px; font-weight: bold; }
 .special-labels span.wrap label.faded { color: #555555; }
-.special-labels span.wrap input { padding: 7px; color: white; border: 1px solid #444444; font-size: 16px; font-weight: bold; background: #333333; }
+.special-labels span.wrap input, .special-labels span.wrap textarea { padding: 7px; color: white; border: 1px solid #444444; font-size: 16px; font-weight: bold; background: #333333; }
+.special-labels span.wrap textarea { display: block; font-size: 14px; font-weight: normal; }
 .special-labels span.wrap.shadow { border: 5px solid rgba(0,105,183,.2); -moz-box-shadow: 0px 0px 5px rgba(0,105,183,.5); }
 .special-labels span.wrap.shadow input { border: 1px solid rgba(20,58,87,.4); }
 
@@ -140,10 +141,13 @@ body { background: url("/images/body-bg.png") no-repeat 50% 60px; background-col
 h3 { font-size: 24px; text-shadow: 0 -1px 0 #000; position: relative; }
 h3 small { position: absolute; top: 4px; right: 0px; }
 
-a { color: #00aedb; }
+a { color: #00aedb; outline: none; }
 a:hover { color: #44f2ff; }
 
 strong { color: #fff; }
+
+.page-title { margin-bottom: 30px; }
+.page-title h2 { color: #fff; font-size: 30px; }
 
 hr { color: transparent; border-left: none; border-right: none; border-top: rgba(0,0,0,1) 1px solid; border-bottom: rgba(255,255,255,.06) 1px solid; }
 
@@ -167,7 +171,10 @@ hr { color: transparent; border-left: none; border-right: none; border-top: rgba
 .time.mega span { display: block; height: 46px; width: 248px; background: url(/images/time-gradient.png) repeat-x 0% 10%; position: absolute; top: 35px; }
 .time.mega small { font-size: 30px; line-height: 60px; }
 
-.homepage-list { list-style: none; margin: 10px, 0 20px; text-shadow: 0 -1px 0 #000; text-align: left; }
-.homepage-list li { padding: 6px 0; border-bottom: 1px solid rgba(0,0,0,.8); border-top: 1px solid rgba(255,255,255,0.07); }
+.homepage-list { list-style: none; margin-top: 20px; text-shadow: 0 -1px 0 #000; text-align: left; }
+.homepage-list li { padding: 6px 0; border-bottom: 1px solid rgba(0,0,0,.8); border-top: 1px solid rgba(255,255,255,0.07); position: relative; }
 .homepage-list li:first-child { border-top: none; font-weight: bold; color: #eee; }
 .homepage-list li:last-child { border-bottom: none; }
+.homepage-list li span.actions { display: block; padding: 8px 0 0 0; position: absolute; top: 0; right: 0; }
+.homepage-list li span.actions .like, .homepage-list li span.actions .already-liked { display: inline-block; text-indent: -1000em; margin-right: 5px; width: 20px; height: 20px; background: url(/images/like-gray.png); }
+.homepage-list li span.actions .like:hover, .homepage-list li span.actions .already-liked { background: url(/images/like.png); }

@@ -9,7 +9,26 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100224175758) do
+ActiveRecord::Schema.define(:version => 20100225000201) do
+
+  create_table "likes", :force => true do |t|
+    t.integer  "user_id"
+    t.integer  "presentation_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "presentations", :force => true do |t|
+    t.string   "title"
+    t.integer  "presenter_id"
+    t.integer  "owner_id"
+    t.integer  "location_id"
+    t.datetime "date"
+    t.string   "state",        :default => "idea"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.text     "description"
+  end
 
   create_table "users", :force => true do |t|
     t.string   "email"

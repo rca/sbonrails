@@ -11,6 +11,9 @@ module NavigationHelpers
     when /the password reset request page/i
       new_password_path
 
+    when /the add presentation idea page/
+      new_presentation_path
+
     # Add more page name => path mappings here
 
     else
@@ -21,3 +24,4 @@ module NavigationHelpers
 end
 
 World(NavigationHelpers)
+

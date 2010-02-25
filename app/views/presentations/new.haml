@@ -1,0 +1,20 @@
+.page-title
+    %h2 Add a Presentation Idea
+    %hr
+
+= error_messages_for :presentation
+- form_for @presentation, :html => {:class => 'special-labels'} do |form|
+    = form.hidden_field :owner_id, :value => current_user.id
+
+    %span.wrap
+        = form.label :title
+        = form.text_field :title
+
+    %span.wrap
+        = form.label :description, "Short Description"
+        = form.text_area :description
+
+
+    %button.large.blue.button
+        <span>Suggest Presentation</span>
+
