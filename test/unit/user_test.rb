@@ -1,8 +1,11 @@
 require 'test_helper'
 
 class UserTest < ActiveSupport::TestCase
-  should_have_many :presentations
-  should_have_many :created_presentations
+  should_have_many :presentations,
+                   :created_presentations,
+                   :likes,
+                   :liked_presentation_ideas
+
 
    context "users who like some presentations" do
       setup do
@@ -15,6 +18,7 @@ class UserTest < ActiveSupport::TestCase
         @presentation_idea3 = Factory(:presentation_idea)
       end
 
+      # .likes?(presentation)
       should "return false when user doesnt like presentation" do
         assert !@user1.likes?(@presentation_idea1)
       end

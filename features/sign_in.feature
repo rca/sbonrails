@@ -33,10 +33,3 @@ Feature: Sign in
       When I return next time
       Then I should be signed in
 
-
-  Scenario: User signs in and should not see sign up link
-    Given I have signed in with "email@person.com/password"
-    And I am on the homepage
-    Then I should not see "Join SB on Rails"
-    And I should see "Add +"
-

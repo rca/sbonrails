@@ -1,19 +1,15 @@
-/* line 1, ../../../app/stylesheets/partials/_reset.sass */
 html, body, div, h1, h2, h3, h4, h5, h6, ul, li {
   margin: 0;
   padding: 0; }
 
-/* line 11, ../../../app/stylesheets/partials/_grid.sass */
 #gridWrapper {
   width: 1000px;
   margin: 0 auto;
   position: relative; }
 
-/* line 16, ../../../app/stylesheets/partials/_grid.sass */
 .row {
   margin: 20px, 0; }
 
-/* line 19, ../../../app/stylesheets/partials/_grid.sass */
 .row:after {
   display: block;
   clear: both;
@@ -21,188 +17,143 @@ html, body, div, h1, h2, h3, h4, h5, h6, ul, li {
   visibility: hidden;
   height: 0; }
 
-/* line 27, ../../../app/stylesheets/partials/_grid.sass */
 .centered {
   margin: 0 auto;
   text-align: center; }
 
-/* line 31, ../../../app/stylesheets/partials/_grid.sass */
 .extra-margin {
   margin-bottom: 60px; }
 
-/* line 34, ../../../app/stylesheets/partials/_grid.sass */
 .column, .columns {
   margin: 0 0 0 20px;
   padding: 0;
   float: left; }
 
-/* line 39, ../../../app/stylesheets/partials/_grid.sass */
 .first.column, .first.columns {
   margin: 0;
   padding: 0;
   float: left; }
 
-/* line 44, ../../../app/stylesheets/partials/_grid.sass */
 .1-quarter {
   width: 25px; }
 
-/* line 48, ../../../app/stylesheets/partials/_grid.sass */
 .half {
   width: 50px; }
 
-/* line 51, ../../../app/stylesheets/partials/_grid.sass */
 .three-quarters {
   width: 75px; }
 
-/* line 56, ../../../app/stylesheets/partials/_grid.sass */
 .one {
   width: 100px; }
 
-/* line 60, ../../../app/stylesheets/partials/_grid.sass */
 .two {
   width: 200px; }
 
-/* line 64, ../../../app/stylesheets/partials/_grid.sass */
 .three {
   width: 300px; }
 
-/* line 68, ../../../app/stylesheets/partials/_grid.sass */
 .four {
   width: 400px; }
 
-/* line 73, ../../../app/stylesheets/partials/_grid.sass */
 .five {
   width: 500px; }
 
-/* line 78, ../../../app/stylesheets/partials/_grid.sass */
 .six {
   width: 600px; }
 
-/* line 82, ../../../app/stylesheets/partials/_grid.sass */
 .seven {
   width: 700px; }
 
-/* line 86, ../../../app/stylesheets/partials/_grid.sass */
 .eight {
   width: 800px; }
 
-/* line 90, ../../../app/stylesheets/partials/_grid.sass */
 .nine {
   width: 900px; }
 
-/* line 94, ../../../app/stylesheets/partials/_grid.sass */
 .ten {
   width: 1000px; }
 
-/* line 99, ../../../app/stylesheets/partials/_grid.sass */
 .one-and-a-quarter {
   width: 125px; }
 
-/* line 103, ../../../app/stylesheets/partials/_grid.sass */
 .two-and-a-quarter {
   width: 225px; }
 
-/* line 107, ../../../app/stylesheets/partials/_grid.sass */
 .three-and-a-quarter {
   width: 325px; }
 
-/* line 111, ../../../app/stylesheets/partials/_grid.sass */
 .four-and-a-quarter {
   width: 425px; }
 
-/* line 115, ../../../app/stylesheets/partials/_grid.sass */
 .five-and-a-quarter {
   width: 525px; }
 
-/* line 119, ../../../app/stylesheets/partials/_grid.sass */
 .six-and-a-quarter {
   width: 625px; }
 
-/* line 123, ../../../app/stylesheets/partials/_grid.sass */
 .seven-and-a-quarter {
   width: 725px; }
 
-/* line 127, ../../../app/stylesheets/partials/_grid.sass */
 .eight-and-a-quarter {
   width: 825px; }
 
-/* line 131, ../../../app/stylesheets/partials/_grid.sass */
 .nine-and-a-quarter {
   width: 925px; }
 
-/* line 137, ../../../app/stylesheets/partials/_grid.sass */
 .one-and-a-half {
   width: 150px; }
 
-/* line 141, ../../../app/stylesheets/partials/_grid.sass */
 .two-and-a-half {
   width: 250px; }
 
-/* line 145, ../../../app/stylesheets/partials/_grid.sass */
 .three-and-a-half {
   width: 350px; }
 
-/* line 149, ../../../app/stylesheets/partials/_grid.sass */
 .four-and-a-half {
   width: 450px; }
 
-/* line 153, ../../../app/stylesheets/partials/_grid.sass */
 .five-and-a-half {
   width: 550px; }
 
-/* line 157, ../../../app/stylesheets/partials/_grid.sass */
 .six-and-a-half {
   width: 650px; }
 
-/* line 161, ../../../app/stylesheets/partials/_grid.sass */
 .seven-and-a-half {
   width: 750px; }
 
-/* line 165, ../../../app/stylesheets/partials/_grid.sass */
 .eight-and-a-half {
   width: 850px; }
 
-/* line 169, ../../../app/stylesheets/partials/_grid.sass */
 .nine-and-a-half {
   width: 950px; }
 
-/* line 173, ../../../app/stylesheets/partials/_grid.sass */
 .one-and-three-quarter {
   width: 175px; }
 
-/* line 177, ../../../app/stylesheets/partials/_grid.sass */
 .two-and-three-quarters {
   width: 275px; }
 
-/* line 181, ../../../app/stylesheets/partials/_grid.sass */
 .three-and-three-quarters {
   width: 375px; }
 
-/* line 185, ../../../app/stylesheets/partials/_grid.sass */
 .four-and-three-quarters {
   width: 475px; }
 
-/* line 189, ../../../app/stylesheets/partials/_grid.sass */
 .five-and-three-quarters {
   width: 575px; }
 
-/* line 193, ../../../app/stylesheets/partials/_grid.sass */
 .six-and-three-quarters {
   width: 675px; }
 
-/* line 197, ../../../app/stylesheets/partials/_grid.sass */
 .seven-and-three-quarters {
   width: 775px; }
 
-/* line 201, ../../../app/stylesheets/partials/_grid.sass */
 .eight-and-three-quarters {
   width: 875px; }
 
-/* line 205, ../../../app/stylesheets/partials/_grid.sass */
 .nine-and-three-quarters {
   width: !column_width * 9.75; }
 
-/* line 5, ../../../app/stylesheets/partials/_buttons.sass */
 .button {
   display: inline-block;
   padding: 0px;
@@ -218,7 +169,6 @@ html, body, div, h1, h2, h3, h4, h5, h6, ul, li {
   border: rgba(0,0,0,.9) solid 1px;
   cursor: pointer;
   outline: none; }
-  /* line 18, ../../../app/stylesheets/partials/_buttons.sass */
   .button span {
     padding: 5px 18px;
     display: block;
@@ -230,80 +180,60 @@ html, body, div, h1, h2, h3, h4, h5, h6, ul, li {
     -moz-box-shadow: inset 0 15px 5px rgba(255, 255, 255, 0.1), inset 0px -10px 12px rgba(0, 0, 0, 0.25);
     -webkit-box-shadow: inset 0 15px 5px rgba(255, 255, 255, 0.1), inset 0px -10px 12px rgba(0, 0, 0, 0.25);
     box-shadow: inset 0 15px 5px rgba(255, 255, 255, 0.1), inset 0px -10px 12px rgba(0, 0, 0, 0.25); }
-  /* line 29, ../../../app/stylesheets/partials/_buttons.sass */
   .button:active span {
     -moz-box-shadow: inset 0 5px 10px rgba(0, 0, 0, 0.4);
     -webkit-box-shadow: inset 0 5px 10px rgba(0, 0, 0, 0.4);
     box-sahdow: inset 0 5px 10px rgba(0, 0, 0, 0.4); }
 
-/* line 33, ../../../app/stylesheets/partials/_buttons.sass */
 .button:hover {
   color: #fff; }
 
-/* line 36, ../../../app/stylesheets/partials/_buttons.sass */
 .button.inactive {
   cursor: default; }
 
-/* line 44, ../../../app/stylesheets/partials/_buttons.sass */
 .large.button {
   font-size: 20px;
   margin-top: 20px;
   margin-right: 20px; }
 
-/* line 49, ../../../app/stylesheets/partials/_buttons.sass */
 .small.button {
   font-size: 14px; }
-  /* line 51, ../../../app/stylesheets/partials/_buttons.sass */
   .small.button span {
     padding: 3px 12px; }
 
-/* line 58, ../../../app/stylesheets/partials/_buttons.sass */
 .blue.button {
   background-color: #0070c3; }
-  /* line 60, ../../../app/stylesheets/partials/_buttons.sass */
   .blue.button:hover {
     background-color: #33a3f6; }
-  /* line 62, ../../../app/stylesheets/partials/_buttons.sass */
   .blue.button:active {
     background-color: #0070c3; }
 
-/* line 67, ../../../app/stylesheets/partials/_buttons.sass */
 .red.button {
   background-color: #aa1818; }
-  /* line 69, ../../../app/stylesheets/partials/_buttons.sass */
   .red.button:hover {
     background-color: #dd4b4b; }
-  /* line 71, ../../../app/stylesheets/partials/_buttons.sass */
   .red.button:active {
     background-color: #aa1818; }
 
-/* line 74, ../../../app/stylesheets/partials/_buttons.sass */
 .dark-gray.button {
   background-color: #333333; }
-  /* line 76, ../../../app/stylesheets/partials/_buttons.sass */
   .dark-gray.button:hover {
     background-color: #666666; }
-  /* line 78, ../../../app/stylesheets/partials/_buttons.sass */
   .dark-gray.button:active {
     background-color: #333333; }
 
-/* line 81, ../../../app/stylesheets/partials/_buttons.sass */
 .medium-gray.button {
   background-color: #454545; }
-  /* line 83, ../../../app/stylesheets/partials/_buttons.sass */
   .medium-gray.button:hover {
     background-color: #787878; }
-  /* line 85, ../../../app/stylesheets/partials/_buttons.sass */
   .medium-gray.button:active {
     background-color: #454545; }
 
-/* line 89, ../../../app/stylesheets/partials/_buttons.sass */
 .light-gray.button {
   background-color: #cccccc;
   text-shadow: none;
   color: #9a9a9a; }
 
-/* line 14, ../../../app/stylesheets/partials/_labels.sass */
 .special-labels span.wrap {
   position: relative;
   background: transparent;
@@ -312,7 +242,6 @@ html, body, div, h1, h2, h3, h4, h5, h6, ul, li {
   margin: 5px 0 5px 0;
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px; }
-  /* line 23, ../../../app/stylesheets/partials/_labels.sass */
   .special-labels span.wrap label {
     position: absolute;
     top: 6px;
@@ -320,10 +249,8 @@ html, body, div, h1, h2, h3, h4, h5, h6, ul, li {
     color: #888888;
     font-size: 18px;
     font-weight: bold; }
-  /* line 31, ../../../app/stylesheets/partials/_labels.sass */
   .special-labels span.wrap label.faded {
     color: #555555; }
-  /* line 34, ../../../app/stylesheets/partials/_labels.sass */
   .special-labels span.wrap input, .special-labels span.wrap textarea {
     padding: 7px;
     color: white;
@@ -331,63 +258,50 @@ html, body, div, h1, h2, h3, h4, h5, h6, ul, li {
     font-size: 16px;
     font-weight: bold;
     background: #333333; }
-  /* line 42, ../../../app/stylesheets/partials/_labels.sass */
   .special-labels span.wrap textarea {
     display: block;
     font-size: 14px;
     font-weight: normal; }
-/* line 47, ../../../app/stylesheets/partials/_labels.sass */
 .special-labels span.wrap.shadow {
   border: 5px solid rgba(0,105,183,.2);
   -moz-box-shadow: 0px 0px 5px rgba(0,105,183,.5); }
-  /* line 51, ../../../app/stylesheets/partials/_labels.sass */
   .special-labels span.wrap.shadow input {
     border: 1px solid rgba(20,58,87,.4); }
 
-/* line 54, ../../../app/stylesheets/partials/_labels.sass */
 .special-labels.model-form {
   margin-top: 20px; }
-  /* line 56, ../../../app/stylesheets/partials/_labels.sass */
   .special-labels.model-form .button {
     margin-top: 20px; }
 
-/* line 16, ../../../app/stylesheets/global.sass */
 body {
   background: url("/images/body-bg.png") no-repeat 50% 60px;
   background-color: #101010;
   font-family: Helvetica, Arial, sans-serif;
   color: #d2d2d2; }
 
-/* line 23, ../../../app/stylesheets/global.sass */
 h3 {
   font-size: 24px;
   text-shadow: 0 -1px 0 #000;
   position: relative; }
-  /* line 27, ../../../app/stylesheets/global.sass */
   h3 small {
     position: absolute;
     top: 4px;
     right: 0px; }
 
-/* line 30, ../../../app/stylesheets/global.sass */
 a {
   color: #00aedb;
   outline: none; }
-  /* line 33, ../../../app/stylesheets/global.sass */
   a:hover {
     color: #44f2ff; }
 
-/* line 36, ../../../app/stylesheets/global.sass */
 strong {
   color: #fff; }
 
-/* line 40, ../../../app/stylesheets/global.sass */
 .page-title {
   margin-bottom: 30px;
   position: relative;
   color: #fff;
   font-size: 30px; }
-  /* line 46, ../../../app/stylesheets/global.sass */
   .page-title small {
     display: block;
     font-weight: normal;
@@ -395,19 +309,16 @@ strong {
     position: absolute;
     top: 10px;
     right: 0; }
-    /* line 52, ../../../app/stylesheets/global.sass */
     .page-title small img {
       display: block;
       float: left;
       margin-top: 3px;
       margin-right: 15px;
       line-height: 20px; }
-    /* line 59, ../../../app/stylesheets/global.sass */
     .page-title small .button {
       margin-top: -10px;
       margin-right: 0; }
 
-/* line 63, ../../../app/stylesheets/global.sass */
 hr {
   color: transparent;
   border-left: none;
@@ -415,7 +326,6 @@ hr {
   border-top: rgba(0,0,0,1) 1px solid;
   border-bottom: rgba(255,255,255,.06) 1px solid; }
 
-/* line 70, ../../../app/stylesheets/global.sass */
 .header-bar {
   width: 100%;
   height: 60px;
@@ -426,24 +336,19 @@ hr {
   top: 0;
   left: 0px; }
 
-/* line 79, ../../../app/stylesheets/global.sass */
 .header {
   margin-bottom: 20px;
   line-height: 60px; }
-  /* line 83, ../../../app/stylesheets/global.sass */
   .header h1 {
     color: #fff;
     font-size: 32px; }
-    /* line 87, ../../../app/stylesheets/global.sass */
     .header h1.logo {
       background: url(/images/logo.png) no-repeat top left;
       height: 123px;
       padding-left: 130px; }
-      /* line 92, ../../../app/stylesheets/global.sass */
       .header h1.logo span {
         font-weight: normal;
         color: #cccccc; }
-  /* line 97, ../../../app/stylesheets/global.sass */
   .header #menu {
     list-style: none;
     position: absolute;
@@ -451,26 +356,20 @@ hr {
     right: 0px;
     font-size: 18px;
     text-transform: capitalize; }
-    /* line 30, ../../../app/stylesheets/partials/_mixins.sass */
     .header #menu li {
       float: left;
       margin-right: 20px; }
-    /* line 103, ../../../app/stylesheets/global.sass */
     .header #menu a {
       color: #555555;
       text-decoration: none;
       display: block; }
-      /* line 108, ../../../app/stylesheets/global.sass */
       .header #menu a:hover {
         color: white; }
-      /* line 111, ../../../app/stylesheets/global.sass */
       .header #menu a.active {
         color: white;
         font-weight: bold; }
-    /* line 116, ../../../app/stylesheets/global.sass */
     .header #menu li {
       position: relative; }
-      /* line 119, ../../../app/stylesheets/global.sass */
       .header #menu li ul.submenu {
         width: 200px;
         padding: 5px 5px;
@@ -489,32 +388,26 @@ hr {
         box-shadow: 0 2px 5px black;
         border: 1px solid #000;
         z-index: 4; }
-        /* line 133, ../../../app/stylesheets/global.sass */
         .header #menu li ul.submenu li {
           width: 100%;
           margin: 0px 0;
           padding: 10px 0;
           border-bottom: 1px solid rgba(255,255,255,.08); }
-      /* line 140, ../../../app/stylesheets/global.sass */
       .header #menu li:hover ul.submenu {
         display: block; }
 
-/* line 151, ../../../app/stylesheets/global.sass */
 .homepage-main {
   font-size: 18px; }
-  /* line 154, ../../../app/stylesheets/global.sass */
   .homepage-main p {
     margin-top: 30px;
     margin-bottom: 20px;
     text-shadow: 0 -1px 0 #000; }
 
-/* line 159, ../../../app/stylesheets/global.sass */
 .time {
   font-size: 60px;
   line-height: 100px;
   text-shadow: 0 -1px 0px #fff, 0 3px 5px rgba(0,0,0,1);
   color: #ccc; }
-  /* line 165, ../../../app/stylesheets/global.sass */
   .time.mega {
     color: #dddddd;
     font-size: 65px;
@@ -530,7 +423,6 @@ hr {
     -moz-box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.6);
     -webkit-box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.6);
     box-sahdow: inset 0 0 10px rgba(0, 0, 0, 0.6); }
-    /* line 179, ../../../app/stylesheets/global.sass */
     .time.mega span {
       display: block;
       height: 46px;
@@ -538,47 +430,38 @@ hr {
       background: url(/images/time-gradient.png) repeat-x 0% 10%;
       position: absolute;
       top: 35px; }
-    /* line 186, ../../../app/stylesheets/global.sass */
     .time.mega small {
       font-size: 30px;
       line-height: 60px; }
 
-/* line 194, ../../../app/stylesheets/global.sass */
 .homepage-list {
   list-style: none;
   margin-top: 20px;
   text-shadow: 0 -1px 0 #000;
   text-align: left; }
-  /* line 200, ../../../app/stylesheets/global.sass */
   .homepage-list a {
     color: inherit;
     text-decoration: none; }
-    /* line 203, ../../../app/stylesheets/global.sass */
     .homepage-list a:hover {
       color: #00aedb;
       text-decoration: underline; }
-  /* line 208, ../../../app/stylesheets/global.sass */
   .homepage-list li {
     padding: 6px 0;
     border-bottom: 1px solid rgba(0,0,0,.8);
     border-top: 1px solid rgba(255,255,255,0.07);
     position: relative; }
-    /* line 214, ../../../app/stylesheets/global.sass */
     .homepage-list li:first-child {
       border-top: none;
       font-weight: bold;
       color: #eee; }
-    /* line 219, ../../../app/stylesheets/global.sass */
     .homepage-list li:last-child {
       border-bottom: none; }
-    /* line 222, ../../../app/stylesheets/global.sass */
     .homepage-list li span.actions {
       display: block;
       padding: 8px 0 0 0;
       position: absolute;
       top: 0;
       right: 0; }
-      /* line 227, ../../../app/stylesheets/global.sass */
       .homepage-list li span.actions .like, .homepage-list li span.actions .already-liked, .homepage-list li span.actions .like-icon {
         display: inline-block;
         text-indent: -1000em;
@@ -586,6 +469,5 @@ hr {
         width: 20px;
         height: 20px;
         background: url(/images/like-gray.png); }
-      /* line 235, ../../../app/stylesheets/global.sass */
       .homepage-list li span.actions .like:hover, .homepage-list li span.actions .already-liked {
         background: url(/images/like.png); }

@@ -2,9 +2,12 @@ module HomeHelper
 
   def render_like_link(idea)
 
-  return  link_to "Like This", "#",
-          :class => "#{ @liked_ideas.include?(idea)? 'already-liked': 'like' }",
-          :id => "presentation_#{idea.id}" if current_user
+   if current_user
+
+    return link_to "Like This","/likes/new/#{idea.id}",
+                   {:class => "#{ @liked_ideas.include?(idea)? 'already-liked': 'like' }",
+                   :id => "presentation_#{idea.id}"}
+    end
 
   return "<span class='like-icon'>Like This</span>"
 

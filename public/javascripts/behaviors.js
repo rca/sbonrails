@@ -1,6 +1,9 @@
 $(document).ready(function() {
 
-    $('.like').click( function() {
+     /* ------------------------
+          FOR LIKING A PRESENTATION IDEA
+    ---------------------------*/
+    $('.like').click( function(e) {
        var obj = $(this);
        var id  = obj.extract_id();
        data = "like[presentation_id]=" + id;
@@ -18,9 +21,12 @@ $(document).ready(function() {
     });
 
 
+    //$('.already-liked').click( function(e) { return false; } );
+
+
 
     /* ------------------------
-    FADING FORM LABELS
+         FADING FORM LABELS
        -----------------------*/
     $('.special-labels input').each( function()  {
         var obj = $(this);
