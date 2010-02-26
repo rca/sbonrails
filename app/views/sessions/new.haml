@@ -1,3 +1,8 @@
+%h2.page-title
+    Sign In
+
+%hr
+
 - form_for :session, :url => session_path, :html => {:class => 'special-labels'} do |form|
     %span.wrap
         = form.label :email

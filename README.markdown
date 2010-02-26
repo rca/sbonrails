@@ -7,7 +7,7 @@ This is the source code for the Santa Barbara Rails Group website, [sbonrails.co
 
 ### Requirements
 
-bostonrb.org is built and managed primarily the following:
+sbonrails is built and managed primarily the following:
 
  * Ruby 1.8.x
  * Rubygems 1.3.5
@@ -15,14 +15,15 @@ bostonrb.org is built and managed primarily the following:
  * MySQL
  * git
 
-You will need these installed before you can start developing and running the application. For help getting this environment running, see [these excellent installation notes](http://wiki.devchix.com/index.php?title=Workshop_Installation_Notes)
-
-
-### Downloading
-
-We're using GitHub for our git hosting. To download the source, use the following command:
-
-    git clone git://github.com/bostonrb/bostonrb.git
+### Gem Requirements
+  * compass
+  * haml
+  * thoughtbot-shoulda
+  * factory_girl
+  * clearance
+  * cucumber-rails
+  * database_cleaner
+  * webrat
 
 ### Initial setup
 
