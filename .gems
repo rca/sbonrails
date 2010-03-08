@@ -1,5 +1,4 @@
 haml
 chriseppstein-compass --version '>= 0.8.7' --source gems.github.com
-shoulda, --source http://gems.github.com
-factory_girl, --source http://gemcutter.org
+clearance
 
