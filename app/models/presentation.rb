@@ -14,7 +14,7 @@ class Presentation < ActiveRecord::Base
 
   named_scope :sorted_by_likes,
               :joins => 'left outer join likes on likes.presentation_id = presentations.id',
-              :group => "presentations.id",
+              :group => "presentations",
               :order => 'COUNT(likes.id) DESC'
 
   def num_likes
