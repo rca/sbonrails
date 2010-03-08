@@ -3,7 +3,7 @@
 
 class ApplicationController < ActionController::Base
   include Clearance::Authentication
-  before_filter :authenticate, :except => [:index,:show]
+  before_filter :authenticate, :except => [:index,:show,:ideas]
   helper :all # include all helpers, all the time
   protect_from_forgery # See ActionController::RequestForgeryProtection for details
 
