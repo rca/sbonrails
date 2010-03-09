@@ -8,10 +8,8 @@
 
 
 
-Rails::Initializer.run do |config|
-  config.gem "thoughtbot-shoulda", :lib => "shoulda", :source => "http://gems.github.com"
-  config.gem "factory_girl", :source => "http://gemcutter.org"
-end
+config.gem "thoughtbot-shoulda", :lib => "shoulda", :source => "http://gems.github.com"
+config.gem "factory_girl", :source => "http://gemcutter.org"
 
 config.cache_classes = true
 

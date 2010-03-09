@@ -14,8 +14,13 @@ class Presentation < ActiveRecord::Base
 
   named_scope :sorted_by_likes,
               :joins => 'left outer join likes on likes.presentation_id = presentations.id',
-              :group => "presentations",
+              :group => "presentations.id",
               :order => 'COUNT(likes.id) DESC'
+
+
+  def self.sorted_by_likes_slow(options = nil)
+    Presentation.ideas.all(options).sort {|a,b| b.num_likes <=> a.num_likes  }
+  end
 
   def num_likes
     likes.count

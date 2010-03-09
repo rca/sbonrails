@@ -47,8 +47,16 @@ class PresentationTest < ActiveSupport::TestCase
        assert_equal @presentation_idea4.num_likes, 6
       end
 
-      should "have method for popular ideas (sorted by likes)" do
-        assert_equal  Presentation.sorted_by_likes,
+
+
+      should "have way to limit resutls for popular ideas" do
+        assert_equal Presentation.sorted_by_likes.all(:limit => 1), [@presentation_idea4]
+      end
+
+
+      # Temp method to circumvent - named_scope issues between mysql & psql
+      should "have method for popular ideas (sorted by likes_slow)" do
+        assert_equal  Presentation.sorted_by_likes_slow,
                     [ @presentation_idea4,
                       @presentation_idea1,
                       @presentation_idea2,
@@ -56,8 +64,9 @@ class PresentationTest < ActiveSupport::TestCase
                       @presentation_idea5 ]
       end
 
-      should "have way to limit resutls for popular ideas" do
-        assert_equal Presentation.sorted_by_likes.all(:limit => 1), [@presentation_idea4]
+
+      should "have way to limit resutls for popular ideas (slower method)" do
+        assert_equal Presentation.sorted_by_likes_slow(:limit => 1), [@presentation_idea4]
       end
 
     end
