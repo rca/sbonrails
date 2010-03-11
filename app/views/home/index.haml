@@ -15,18 +15,16 @@
         = render :partial => 'presentations/past_presentations'
 
     .two-and-a-half.columns
-        %h3 Upcoming Events
+        %h3 
+            Events
+            %small
+                = link_to "<span>Add +</span>", new_event_path, :class => 'small blue button'
 
         %ul.homepage-list
-            %li
-                Working with Git
-            %li
-                Using Chef with Rails
-            %li
-                Lightning Talks
-            %li
-                Testing with Cucumber
-
+            - @events.each do |event|
+                %li
+                    = event.name
+                    = event.the_date
         %p
             = link_to "See More &raquo;", "#"
 
